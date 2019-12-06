@@ -8,7 +8,7 @@ export class CardDataService {
   cardList: ICard[];
 
   getCard(id: number): ICard {
-    return this.cardList[id];
+    return this.cardList[id - 1];
   }
 
   constructor() {
