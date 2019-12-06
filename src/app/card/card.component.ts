@@ -10,12 +10,14 @@ import { ICard } from './card';
 export class CardComponent implements OnInit {
   card: ICard
 
-  constructor(private data: CardDataService) { 
-    this.card.id = 1 + Math.random()*3;
-    this.card = data.getCard(this.card.id);
+  constructor(private data: CardDataService) {
+    this.card = {} as ICard;
   }
 
   ngOnInit() {
+    this.card.id = Math.floor(1 + Math.random()*3);
+    this.card = this.data.getCard(this.card.id);
+    console.log(this.card);
   }
 
 }

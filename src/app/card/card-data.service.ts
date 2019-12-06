@@ -1,19 +1,14 @@
 import { Injectable } from '@angular/core';
-import { CardModule } from './card.module';
 import { ICard } from './card';
 
 @Injectable({
-  providedIn: CardModule
+  providedIn: 'root'
 })
 export class CardDataService {
   cardList: ICard[];
 
   getCard(id: number): ICard {
     return this.cardList[id];
-  }
-
-  constructor() { 
-    this.initCardList();
   }
 
   initCardList() {
