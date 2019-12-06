@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CardDataService } from './card-data.service';
 import { ICard } from './card';
 
@@ -8,14 +8,14 @@ import { ICard } from './card';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
+  @Input() id: number;
   card: ICard = {} as ICard;
 
   constructor(private data: CardDataService) {
-    this.card.id = Math.floor(1 + Math.random()*3);
   }
 
   ngOnInit() {
-    this.card = this.data.getCard(this.card.id);
+    this.card = this.data.getCard(this.id);
     console.log(this.card);
   }
 
