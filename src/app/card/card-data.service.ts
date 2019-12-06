@@ -11,6 +11,10 @@ export class CardDataService {
     return this.cardList[id];
   }
 
+  constructor() {
+    this.initCardList();
+  }
+
   initCardList() {
     this.cardList = [
       {
