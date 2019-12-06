@@ -11,9 +11,8 @@ export class CardComponent implements OnInit {
   card: ICard
 
   constructor(private data: CardDataService) { 
-    this.card.id = 1;
-    this.card.title = "Title";
-    this.card.description = "Description";
+    this.card.id = 1 + Math.random()*3;
+    this.card = data.getCard(this.card.id);
   }
 
   ngOnInit() {
