@@ -8,14 +8,13 @@ import { ICard } from './card';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  card: ICard
+  card: ICard = {} as ICard;
 
   constructor(private data: CardDataService) {
-    this.card = {} as ICard;
+    this.card.id = Math.floor(1 + Math.random()*3);
   }
 
   ngOnInit() {
-    this.card.id = Math.floor(1 + Math.random()*3);
     this.card = this.data.getCard(this.card.id);
     console.log(this.card);
   }
