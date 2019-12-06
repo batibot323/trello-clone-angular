@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CardDataService } from './card-data.service';
+import { ICard } from './card';
 
 @Component({
   selector: 'tc-card',
@@ -6,14 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  id: number;
-  title: string;
-  description: string;
+  card: ICard
 
-  constructor() { 
-    this.id = 1;
-    this.title = "Title";
-    this.description = "Description";
+  constructor(private data: CardDataService) { 
+    this.card.id = 1;
+    this.card.title = "Title";
+    this.card.description = "Description";
   }
 
   ngOnInit() {
