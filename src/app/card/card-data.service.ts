@@ -19,7 +19,7 @@ export class CardDataService {
     this.cardList = [
       {
         id: 1,
-        title: "Drink Water!",
+        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum leo nec hendrerit placerat. Phasellus congue dui quis ultricies consequat. Cras pharetra lorem nec scelerisque posuere. Vestibulum sed cursus eros, vitae commodo neque. Nulla sed varius justo, eu gravida elit. Maecenas non diam eget ex finibus maximus a nec lacus. Aenean tempor dapibus nibh at pretium. Phasellus accumsan sapien maximus felis mattis, aliquam tincidunt sem congue. Nam pellentesque leo non imperdiet tincidunt. Maecenas dignissim libero at gravida bibendum.",
         description: "Drink 8 glasses of water! Stay hydrated, king!"
       },
       {
@@ -50,7 +50,7 @@ export class CardDataService {
       {
         id: 7,
         title: "Bake Cookies",
-        description: "Mix ingredients, put in oven, then wait."
+        description: "Mix ingredients, put in oven, then wait. Check!"
       },
       {
         id: 8,
