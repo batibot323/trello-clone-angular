@@ -1,3 +1,12 @@
+# Task List
+- Add board module
+- Add card-detail component
+- Add check list to cards
+- Add back-end REST API's
+- Create a database to handle card data
+- Use database to handle list data
+- Add comments to cards (no-user)
+
 # TrelloClone
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
